@@ -1,0 +1,17 @@
+<div class="row">
+	<h1> {{product.content}}</h1>
+	<div class="col-md-12">
+		Product Name: <input type="text" data-ng-model="product.title" value="{{product.title}}"><br>
+		Price: <input type="text" data-ng-model="product.price" value="{{product.price}}"><br>
+		Description: <input type="text" data-ng-model="product.content" value="{{product.content}}"><br>
+		Image 1 URL:<input type="text" data-ng-model="product.image1" value="{{product.image1}}"><br>
+		Image 2 URL:<input type="text" data-ng-model="product.image2" value="{{product.image2}}"><br>
+		Image 3 URL:<input type="text" data-ng-model="product.image3" value="{{product.image3}}"><br>
+
+		<textarea name="content" id="" cols="30" rows="10" data-ng-model="product.content" value="{{product.content}}">
+		</textarea>
+		<button ng-click="updateProduct()">update product</button>
+		<a ng-click="deleteProduct()" class="btn btn-small btn-danger">delete</a>
+	</div>
+
+</div>

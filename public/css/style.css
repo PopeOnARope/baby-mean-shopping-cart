@@ -1,0 +1,103 @@
+body {
+
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgba(20,20,20,1);
+}
+.nav1 {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-justify-content: space-between;
+	padding: 2%;
+	color: #eee;
+	list-style: none;
+	background-color: rgba(50,50,50,0.9);
+	position: relative;
+	float: top;
+}
+
+.nav1 a {
+	size: 1.5em;
+	color: #eee;
+	text-decoration: none;
+}
+
+.productBox{
+	background-color: #eee;
+	margin: 1%;
+	width: 200px;
+	display: inline-block;
+	border: 2px solid #ddd;
+	box-shadow: 0 0 1em #444;
+
+}
+.carousel {
+	width: 80%;
+	margin-left: 10%;
+}
+
+.carousel img {
+	height: 500px;
+	border: 5px solid black;
+}
+
+a {
+  color: #00B7FF;
+}
+.nameBox{
+	height: 50px;
+}
+.header{
+	background-image: url('http://www.candccustomdrums.com/wordpress/wp-content/uploads/2012/10/CC_drummountain1.jpg');
+	height: 300px;
+	background-size: 110%;
+	background-attachment: fixed;
+
+}
+h1 {
+	font-size: 4em;
+}
+.header>h1{
+		text-align: center;
+		color: #eee;
+		text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+.header>h3{
+		text-align: center;
+		color: #eee;
+		text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+		font-style: italic;
+}
+
+
+.forSale, .shoppingCart{
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -webkit-transition: .5s all ease; }
+
+.buy{
+	float: bottom-right;
+}
+
+/*div{
+ 	border: 1px solid #999;
+ }*/
+
+.imgDiv{
+	height: 150px;
+}	
+img{
+	width: 100%;
+	padding: 0px;
+	max-height: 100%;
+	}
+.col-md-4, .col-md-8{
+	border: 1px solid #ddd;
+}
+.container{
+	width: 90%;
+	background-color: #ddd;
+	padding: 0;
+
+}

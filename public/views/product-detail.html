@@ -1,0 +1,43 @@
+<br>
+<span><a ng-href="#/"> << back to home</a></span>
+<h1>{{product.title}} </h1>
+<div class="jumbotron"> 
+  <div class="carousel">
+    <carousel interval='5000'>
+      <slide class="active">
+        <img ng-src="{{product.image1}}" style="margin:auto;">
+      </slide>
+      <slide>
+        <img ng-src="{{product.image2}}" style="margin:auto;">
+      </slide>
+      <slide>
+        <img ng-src="{{product.image3}}" style="margin:auto;">
+      </slide>
+    </carousel>
+  </div>
+</div>
+
+<div>
+  <tabset justified="true">
+    <tab heading="product details">
+      <div class="col-md-12">
+      <h3>{{product.title}} </h3>
+        <h4>{{product.price | currency : symbol}} </h4>
+        <p>{{product.content}}</p>
+        <li><a ng-click="addToCart(product)" class="btn btn-small btn-primary">buy</a></li>
+      </div>
+    </tab>
+    <tab heading="reviews">
+      <div class="col-md-8">
+        <h3>Reviews</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, velit tenetur ipsam soluta quasi voluptas amet necessitatibus. Veniam, repellendus, mollitia, possimus, sunt adipisci iure totam unde quam voluptate explicabo dolores.Lorem ipsum dolor sit amet.</p>
+        <p> consectetur adipisicing elit. Aperiam, labore error nostrum voluptas dolorum ipsa non deserunt totam tempore voluptates minus quasi sapiente laboriosam adipisci velit sed quam similique vitae!</p>
+      </div>
+    </tab>
+
+  </tabset>
+</div>
+
+
+
+

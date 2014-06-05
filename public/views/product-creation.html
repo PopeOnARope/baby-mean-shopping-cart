@@ -1,0 +1,51 @@
+
+	<h1>product detail</h1>
+<div ng-controller="ProductsCtrl">
+	<form novalidate="novalidate" class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="inputName">Product Name:</label>
+            <div class="controls">
+                <input type="text" id="inputName" data-ng-model="product.title">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputName">Price:</label>
+            <div class="controls">
+                <input type="text" id="inputName" data-ng-model="product.price">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputDescription">Product Description:</label>
+            <div class="controls">
+                <input type="textarea" data-ng-model="product.content">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputDescription">Product Image URL 1:</label>
+            <div class="controls">
+                <input type="textarea" data-ng-model="product.image1">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputDescription">Product Image URL 2:</label>
+            <div class="controls">
+                <input type="textarea" data-ng-model="product.image2">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputDescription">Product Image URL 3:</label>
+            <div class="controls">
+                <input type="textarea" data-ng-model="product.image3">
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+
+              <!-- product-creation.html: -->
+                <a data-ng-click="addProduct(product)" class="btn btn-small btn-primary">add product</a>
+
+            </div>
+
+        </div>
+    </form>
+</div>
